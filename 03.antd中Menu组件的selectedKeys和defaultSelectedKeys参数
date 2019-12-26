@@ -1,0 +1,8 @@
+##问题：
+在编写后台管理系统的导航时，发现在地址栏中输入对应的路由地址，选中的导航不会跳转
+##官方文档：
+defaultSelectedKeys：初始选中的菜单项 key 数组
+selectedKeys：当前选中的菜单项 key 数组
+##理解：
+defaultSelectedKeys 总是根据第一次指定的key进行显示（Menu第一次render时的值）
+selectedKeys 根据最新指定的key进行显示

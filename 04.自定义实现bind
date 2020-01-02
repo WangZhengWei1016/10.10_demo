@@ -1,0 +1,21 @@
+```
+Function.prototype.bind = function (obj) {
+    let args = []
+    // arguments 为调用bind函数时传递的实参数组
+    if (arguments.length > 1) {
+        for (let i = 1; i < arguments.length; i++) {
+            args.push(arguments[i])
+        }
+    }
+    const self = this
+    return function () {
+        // arguments 为调用新函数时传递的实参伪数组
+        if (arguments.length > 1) {
+            for (let i = 0; i < arguments.length; i++) {
+                args.push(arguments[i])
+            }
+        }
+        self.apply(obj, args)
+    }
+}
+```

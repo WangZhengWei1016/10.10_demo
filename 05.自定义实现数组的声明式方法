@@ -1,4 +1,4 @@
-#自定义实现数组的几种声明式方法
+# 自定义实现数组的几种声明式方法
 1. map()
 2. reduce()
 3. filter()
@@ -9,7 +9,7 @@
 
 `let arr = [1, 3, 4, 7, 9, 5, 8]`
 
-###1. map()
+### 1. map()
 ```
 Array.prototype.map = function(callback) {
     let arr = []
@@ -32,7 +32,7 @@ let arr1 = arr.map((item, index) => {
 ```
 ---
 
-###2. reduce()
+### 2. reduce()
 
 ```
 Array.prototype.reduce = function(callback, initValue) {
@@ -54,7 +54,7 @@ let arr2 = arr.reduce((accumulator, currentValue, currentIndex) => {
 
 ---
 
-###3. filter()
+### 3. filter()
 
 ```
 Array.prototype.filter = function(callback) {
@@ -72,7 +72,7 @@ let arr3 = arr.filter((item, index) => item % 2 === 1 && index % 2 === 1)
 
 ---
 
-###4. find()
+### 4. find()
 
 ```
 Array.prototype.find = function(callback) {
@@ -89,7 +89,7 @@ let arr4 = arr.find((item, index) => item % 2 === 1 && index % 2 === 1)
 
 ---
 
-###5. findIndex()
+### 5. findIndex()
 
 ```
 Array.prototype.findIndex = function(callback) {
@@ -105,7 +105,7 @@ let arr5 = arr.findIndex((item, index) => item % 2 === 1 && index % 2 === 1)
 
 ---
 
-###6. every()
+### 6. every()
 
 ```
 Array.prototype.every = function(callback) {
@@ -122,7 +122,7 @@ let arr6 = arr.every((item, index) => item % 2 === 1 && index % 2 === 1)
 
 ---
 
-###7. some()
+### 7. some()
 
 ```
 Array.prototype.some = function(callback) {
